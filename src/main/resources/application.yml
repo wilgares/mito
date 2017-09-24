@@ -1,0 +1,16 @@
+##Esta notacion con archivos yml se utiliza comunmente para la nube
+##es una representacion mas amigable
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/micro
+    username: postgres
+    password: postgres
+
+server:
+  port: 8087
